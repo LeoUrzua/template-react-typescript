@@ -5,6 +5,7 @@
   },
   "description": "template for react projects",
   "devDependencies": {
+    "eslint": "^6.7.1",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "1.19.1",
@@ -40,7 +41,8 @@
     "url": "git+https://github.com/LeoUrzua/template-react-typescript.git"
   },
   "scripts": {
-    "test": "echo \"Success: mock response\" && exit 0"
+    "lint": "echo \"Success: mock lint response\" && exit 0",
+    "test": "echo \"Success: mock  test response\" && exit 0"
   },
   "version": "0.0.0"
 }
