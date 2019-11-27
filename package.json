@@ -5,11 +5,12 @@
   },
   "description": "template for react projects",
   "devDependencies": {
-    "eslint": "^6.7.1",
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "1.19.1",
-    "pretty-quick": "^2.0.1"
+    "pretty-quick": "^2.0.1",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
   },
   "homepage": "https://github.com/LeoUrzua/template-react-typescript#readme",
   "husky": {
@@ -29,7 +30,7 @@
       "git add"
     ],
     "*.{ts, tsx}": [
-      "npm run lint",
+      "npm run tslint",
       "pretty-quick --staged",
       "git add"
     ]
@@ -41,7 +42,7 @@
     "url": "git+https://github.com/LeoUrzua/template-react-typescript.git"
   },
   "scripts": {
-    "lint": "echo \"Success: mock lint response\" && exit 0",
+    "tslint": "echo \"Success: mock tslint response\" && exit 0",
     "test": "echo \"Success: mock  test response\" && exit 0"
   },
   "version": "0.0.0"
