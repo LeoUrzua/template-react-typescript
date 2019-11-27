@@ -1,0 +1,24 @@
+{
+  "author": "Leo Urzua <d.leonardo.urzua@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/LeoUrzua/template-react-typescript/issues"
+  },
+  "description": "template for react projects",
+  "homepage": "https://github.com/LeoUrzua/template-react-typescript#readme",
+  "keywords": [
+    "template",
+    "react",
+    "typescript"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "name": "template-react-typescript",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeoUrzua/template-react-typescript.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.0"
+}
