@@ -4,13 +4,35 @@
     "url": "https://github.com/LeoUrzua/template-react-typescript/issues"
   },
   "description": "template for react projects",
+  "devDependencies": {
+    "husky": "^3.1.0",
+    "lint-staged": "^9.5.0",
+    "prettier": "1.19.1",
+    "pretty-quick": "^2.0.1"
+  },
   "homepage": "https://github.com/LeoUrzua/template-react-typescript#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test && lint-staged"
+    }
+  },
   "keywords": [
     "template",
     "react",
     "typescript"
   ],
   "license": "ISC",
+  "lint-staged": {
+    "*.{js,css,json,md}": [
+      "pretty-quick --staged",
+      "git add"
+    ],
+    "*.{ts, tsx}": [
+      "npm run lint",
+      "pretty-quick --staged",
+      "git add"
+    ]
+  },
   "main": "index.js",
   "name": "template-react-typescript",
   "repository": {
@@ -18,10 +40,7 @@
     "url": "git+https://github.com/LeoUrzua/template-react-typescript.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Success: mock response\" && exit 0"
   },
-  "version": "0.0.0",
-  "devDependencies": {
-    "prettier": "1.19.1"
-  }
+  "version": "0.0.0"
 }
